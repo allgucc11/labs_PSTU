@@ -1,14 +1,15 @@
-Int main ()
+int main ()
 {
 float a ;
-Cin >> a ;
+cin >> a ;
 If (a<5) {
-Count << a*3 << endl ;
+count << a*3 << endl ;
 }
-Else if ( 5 <= a <= 7 ) {
-Count << a/10 << endl ;
+else if ( 5 <= a <= 7 ) {
+count << a/10 << endl ;
 }
 Else {
-Count << a+3 << endl ;
+count << a+3 << endl ;
 }
 }
+
