@@ -1,11 +1,14 @@
 int main ()
 {
-	Int a,b ;
-	cin >> a >> b ;
-	if (b==0) {
-		count << ”ошибка” << endl;
+	int a,b,c ; 
+	cin >> a >> b >> c ;
+	if (a >= b and a >= c) {
+		count << a << endl;
 	}
-	else {
-		Count << a/b << endl ;
+	else if (b>=a and b>=c) { 
+		count << c << endl; 
+	}
+else {
+		count << c << endl ;
 	}
 }
