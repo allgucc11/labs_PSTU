@@ -1,0 +1,107 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Страница-1" id="clQZefzRw_dsFrjd47Ab">
+    <mxGraphModel dx="1042" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gEGTGF_GWpqw463VL-AT-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-1" target="gEGTGF_GWpqw463VL-AT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-1" value="start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-2" target="gEGTGF_GWpqw463VL-AT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-2" value="int N, sum = 0;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-3" target="gEGTGF_GWpqw463VL-AT-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-3" value="cin &gt;&gt; N;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-4" target="gEGTGF_GWpqw463VL-AT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-4" target="gEGTGF_GWpqw463VL-AT-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="490" />
+              <mxPoint x="180" y="850" />
+              <mxPoint x="414" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-4" value="for (int i = 1; i &lt;= N; i++)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="331" y="450" width="166" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-5" target="gEGTGF_GWpqw463VL-AT-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-5" target="gEGTGF_GWpqw463VL-AT-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-5" value="if (i % 3 == 0)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="351" y="600" width="126" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-6" target="gEGTGF_GWpqw463VL-AT-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="291" y="820" />
+              <mxPoint x="660" y="820" />
+              <mxPoint x="660" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-6" value="sum -= i;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="231" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="537" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-7" value="sum += i;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="477" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gEGTGF_GWpqw463VL-AT-8" target="gEGTGF_GWpqw463VL-AT-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-8" value="cout &lt;&lt; sum;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-9" value="end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-20" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="600" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-21" value="0" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="600" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-22" value="&lt;div&gt;#include &amp;lt;iostream&amp;gt;&lt;/div&gt;&lt;div&gt;using namespace std;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;int main ()&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="547" y="100" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-23" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=-0.032;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="gEGTGF_GWpqw463VL-AT-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="417" y="160" as="sourcePoint" />
+            <mxPoint x="597" y="270" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-24" value="return 0;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="547" y="940" width="50" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gEGTGF_GWpqw463VL-AT-25" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.571;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="gEGTGF_GWpqw463VL-AT-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="417" y="980" as="sourcePoint" />
+            <mxPoint x="597" y="1080" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
