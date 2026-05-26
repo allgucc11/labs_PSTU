@@ -1,0 +1,59 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram id="class_10_uml" name="UML class diagram">
+    <mxGraphModel dx="1603" dy="1163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="UML-диаграмма классов: class_10(2).cpp" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="20" width="620" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Money" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;b&gt;Money&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;- rubles: long&lt;br&gt;- kopecks: int&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;- normalize(): void&lt;br&gt;+ Money()&lt;br&gt;+ Money(r: long, k: int)&lt;br&gt;+ Money(m: const Money&amp;amp;)&lt;br&gt;+ ~Money()&lt;br&gt;+ getRubles(): long&lt;br&gt;+ getKopecks(): int&lt;br&gt;+ setRubles(r: long): void&lt;br&gt;+ setKopecks(k: int): void&lt;br&gt;+ operator=(m: const Money&amp;amp;): Money&amp;amp;&lt;br&gt;+ operator==(m: const Money&amp;amp;): bool&lt;br&gt;+ operator!=(m: const Money&amp;amp;): bool&lt;br&gt;+ operator/(m: const Money&amp;amp;): double&lt;br&gt;+ operator*(k: double): Money&lt;br&gt;+ «friend» operator&amp;gt;&amp;gt;(in: istream&amp;amp;, m: Money&amp;amp;): istream&amp;amp;&lt;br&gt;+ «friend» operator&amp;lt;&amp;lt;(out: ostream&amp;amp;, m: const Money&amp;amp;): ostream&amp;amp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="60" y="100" width="500" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="FileOperations" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«utility»&lt;/span&gt;&lt;br&gt;&lt;b&gt;FileOperations&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ make_file(name: const char*): int&lt;br&gt;+ print_file(name: const char*): int&lt;br&gt;+ delete_not_equal(name: const char*, key: Money): int&lt;br&gt;+ change_equal(name: const char*, key: Money): int&lt;br&gt;+ add_begin(name: const char*, count: int): int&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="690" y="100" width="540" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Main" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«program»&lt;/span&gt;&lt;br&gt;&lt;b&gt;main module&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;- name: char[30]&lt;br&gt;- command: int&lt;br&gt;- k: int&lt;br&gt;- key: Money&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ main(): int&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="730" y="500" width="410" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FileSystem" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«external»&lt;/span&gt;&lt;br&gt;&lt;b&gt;file storage&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;temp.txt&lt;br&gt;name: const char*&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ read(): Money&lt;br&gt;+ write(m: Money): void&lt;br&gt;+ remove(name): int&lt;br&gt;+ rename(old, new): int&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="1230" y="480" width="300" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Note" value="&lt;b&gt;Обозначения UML&lt;/b&gt;&lt;br&gt;+ public&amp;nbsp;&amp;nbsp; # protected&amp;nbsp;&amp;nbsp; - private&lt;br&gt;пунктирная стрелка — зависимость&lt;br&gt;«utility» — набор глобальных функций&lt;br&gt;«friend» — дружественная операция C++&lt;br&gt;&lt;br&gt;&lt;b&gt;Примечание&lt;/b&gt;&lt;br&gt;Глобальные функции вынесены в служебный класс, так как в UML диаграмме классов свободные функции обычно отображают как утилиту/модуль." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=left;verticalAlign=top;spacing=10;" parent="1" vertex="1">
+          <mxGeometry x="1440" y="100" width="310" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="e_FileOps_Money" value="«uses»" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="FileOperations" target="Money" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_Main_Money" value="«creates/uses»" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;exitX=-0.004;exitY=0.194;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.999;entryY=0.842;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Main" target="Money" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="537" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_Main_FileOps" value="«calls»" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;" parent="1" source="Main" target="FileOperations" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_FileOps_FileSystem" value="«reads/writes»" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;entryX=0.443;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.695;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="FileOperations" target="FileSystem" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_Main_Note" value="notation" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;" parent="1" source="Main" target="Note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="690" />
+              <mxPoint x="960" y="760" />
+              <mxPoint x="1600" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

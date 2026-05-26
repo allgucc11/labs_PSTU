@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="UML class_6" id="class-6-uml">
+    <mxGraphModel dx="1489" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iterator_title" value="Iterator" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="60" width="430" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iterator_attr" value="- elem: int*" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="110" width="430" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="iterator_methods" value="+ Iterator()&#xa;+ Iterator(e: int*)&#xa;+ Iterator(it: const Iterator&amp;)&#xa;+ operator==(it: const Iterator&amp;) const: bool&#xa;+ operator!=(it: const Iterator&amp;) const: bool&#xa;+ operator--(): void&#xa;+ operator--(int): void&#xa;+ operator*() const: int&amp;&#xa;«friend» class Set" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="165" width="430" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="set_title" value="Set" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="650" y="60" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="set_attr" value="- size: int&#xa;- data: int*&#xa;- beg: Iterator&#xa;- end: Iterator" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="650" y="110" width="470" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="set_methods" value="+ Set(s: int, k: int = 0)&#xa;+ Set(other: const Set&amp;)&#xa;+ ~Set()&#xa;+ operator=(other: const Set&amp;): Set&amp;&#xa;+ operator[](index: int): int&amp;&#xa;+ operator int() const&#xa;+ operator*(other: const Set&amp;) const: Set&#xa;+ first() const: Iterator&#xa;+ last() const: Iterator&#xa;«friend» operator&lt;&lt;(out: ostream&amp;, s: const Set&amp;): ostream&amp;&#xa;«friend» operator&gt;&gt;(in: istream&amp;, s: Set&amp;): istream&amp;" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="650" y="230" width="470" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="global_title" value="Global functions" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="650" width="450" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="global_attr" value="" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="700" width="450" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="global_methods" value="+ operator&lt;&lt;(out: ostream&amp;, s: const Set&amp;): ostream&amp;&#xa;+ operator&gt;&gt;(in: istream&amp;, s: Set&amp;): istream&amp;&#xa;+ main(): int" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="740" width="450" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="composition_set_iterator" value="beg, end" style="endArrow=open;startArrow=diamond;startFill=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;" parent="1" source="set_title" target="iterator_title" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="friend_iterator_set" value="«friend»" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;entryX=-0.002;entryY=0.171;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="iterator_methods" target="set_methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="use_global_set" value="«use»" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="global_title" target="set_methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

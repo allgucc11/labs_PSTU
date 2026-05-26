@@ -1,0 +1,19 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram id="linear-equation-uml" name="Page-1">
+    <mxGraphModel dx="1042" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="class_title" value="LinearEquation" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=20;fontFamily=Arial;strokeColor=#000000;fillColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="190" y="120" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="class_attrs" value="- first: double&lt;br&gt;- second: double" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=15;spacingTop=12;fontSize=18;fontFamily=Arial;strokeColor=#000000;fillColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="190" y="180" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="class_methods" value="+ LinearEquation(a: double = 0, b: double = 0)&lt;br&gt;+ Read(): void&lt;br&gt;+ Show() const: void&lt;br&gt;+ Function(x: double) const: double" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=15;spacingTop=12;fontSize=18;fontFamily=Arial;strokeColor=#000000;fillColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="190" y="270" width="450" height="155" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,59 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="UML class_7(3)" id="class-7-3-uml">
+    <mxGraphModel dx="1226" dy="889" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vector_title" value="«template &lt;class T&gt;»&#xa;Vector&lt;T&gt;" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="65" y="60" width="520" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vector_attr" value="- size: int&#xa;- data: T*" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="65" y="120" width="520" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vector_methods" value="+ Vector(s: int = 0, k: T = T())&#xa;+ Vector(a: const Vector&lt;T&gt;&amp;)&#xa;+ ~Vector()&#xa;+ operator=(a: const Vector&lt;T&gt;&amp;): Vector&lt;T&gt;&amp;&#xa;+ operator[](index: int): T&amp;&#xa;+ operator()() const: int&#xa;+ operator+(k: const T) const: Vector&lt;T&gt;&#xa;+ operator*(k: const T) const: Vector&lt;T&gt;&#xa;«friend» operator&lt;&lt;(out: ostream&amp;, a: const Vector&lt;T&gt;&amp;): ostream&amp;&#xa;«friend» operator&gt;&gt;(in: istream&amp;, a: Vector&lt;T&gt;&amp;): istream&amp;" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="65" y="200" width="520" height="335" as="geometry" />
+        </mxCell>
+        <mxCell id="time_title" value="Time" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="665" y="60" width="430" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="time_attr" value="- min: int&#xa;- sec: int" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="665" y="110" width="430" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="time_methods" value="- normalize(): void&#xa;+ Time()&#xa;+ Time(m: int, s: int)&#xa;+ Time(t: const Time&amp;)&#xa;+ ~Time()&#xa;+ getMin() const: int&#xa;+ getSec() const: int&#xa;+ setMin(m: int): void&#xa;+ setSec(s: int): void&#xa;+ operator=(t: const Time&amp;): Time&amp;&#xa;+ operator+(k: const Time&amp;) const: Time&#xa;+ operator+(s: int) const: Time&#xa;+ operator*(factor: double) const: Time&#xa;«friend» operator&lt;&lt;(out: ostream&amp;, t: const Time&amp;): ostream&amp;&#xa;«friend» operator&gt;&gt;(in: istream&amp;, t: Time&amp;): istream&amp;" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="665" y="190" width="430" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="global_title" value="Global functions" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="355" y="690" width="460" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="global_attr" value="" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="355" y="740" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="global_methods" value="+ main(): int&#xa;creates Vector&lt;int&gt;&#xa;creates Vector&lt;double&gt;&#xa;creates Vector&lt;Time&gt;&#xa;uses Time" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="355" y="780" width="460" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="instantiate_vector_time" value="«instantiate» Vector&lt;Time&gt;" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;entryX=0.772;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="global_title" target="vector_methods" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="use_time" value="«use»" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;exitX=0.837;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.164;entryY=0.991;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="global_title" target="time_methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="template_with_time" value="T = Time" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;entryX=0.004;entryY=0.199;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.996;exitY=0.216;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="vector_methods" target="time_methods" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_instantiations" value="Template instantiations in main():&#xa;Vector&lt;int&gt; v1&#xa;Vector&lt;double&gt; v2&#xa;Vector&lt;Time&gt; v3" style="shape=note;whiteSpace=wrap;html=0;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffffff;strokeColor=#000000;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" parent="1" vertex="1">
+          <mxGeometry x="65" y="615" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="note_to_vector" value="" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;entryX=0.207;entryY=0.994;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=105;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="note_instantiations" target="vector_methods" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="159.99571428571423" y="614.9999999999998" as="sourcePoint" />
+            <mxPoint x="165.71" y="535.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

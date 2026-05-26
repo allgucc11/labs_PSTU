@@ -1,0 +1,31 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram id="computer-uml" name="Page-1">
+    <mxGraphModel dx="1042" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="computer" value="Computer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=18;align=center;" parent="1" vertex="1">
+          <mxGeometry x="180" y="80" width="460" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="computer_attrs" value="- processor: string&lt;br&gt;- ram: int&lt;br&gt;- hdd: int" style="text;strokeColor=#000000;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=14;spacingTop=12;whiteSpace=wrap;html=1;overflow=fill;fontSize=16;" parent="computer" vertex="1">
+          <mxGeometry y="60" width="460" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="computer_ops" value="+ Computer()&lt;br&gt;+ Computer(proc: string, r: int, h: int)&lt;br&gt;+ Computer(other: const Computer&amp;amp;)&lt;br&gt;+ ~Computer()&lt;br&gt;+ setProcessor(proc: string): void&lt;br&gt;+ setRam(r: int): void&lt;br&gt;+ setHdd(h: int): void&lt;br&gt;+ getProcessor(): string&lt;br&gt;+ getRam(): int&lt;br&gt;+ getHdd(): int&lt;br&gt;+ show(): void" style="text;strokeColor=#000000;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=14;spacingTop=12;whiteSpace=wrap;html=1;overflow=fill;fontSize=16;" parent="computer" vertex="1">
+          <mxGeometry y="160" width="460" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="functions" value="«utility»&lt;br&gt;global functions" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=center;" parent="1" vertex="1">
+          <mxGeometry x="760" y="215" width="330" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="functions_ops" value="+ createPC(): Computer&lt;br&gt;+ showPC(c: Computer): void" style="text;strokeColor=#000000;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=14;spacingTop=12;whiteSpace=wrap;html=1;overflow=fill;fontSize=16;" parent="functions" vertex="1">
+          <mxGeometry y="50" width="330" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_use" value="«use»" style="endArrow=open;html=1;rounded=0;dashed=1;strokeColor=#000000;fontSize=14;" parent="1" source="functions" target="computer" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="250" as="sourcePoint" />
+            <mxPoint x="640" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,94 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram id="class_9_uml" name="UML class diagram">
+    <mxGraphModel dx="3916" dy="1680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Error" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«exception»&lt;/span&gt;&lt;br&gt;&lt;b&gt;Error&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ what(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="530" y="90" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="IndexError" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«exception»&lt;/span&gt;&lt;br&gt;&lt;b&gt;IndexError&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;# msg: string = &amp;quot;Ошибка индекса!&amp;quot;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ what(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="240" y="280" width="300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="SizeError" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«exception»&lt;/span&gt;&lt;br&gt;&lt;b&gt;SizeError&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;# msg: string = &amp;quot;Ошибка размера!&amp;quot;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ what(): void&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="820" y="300" width="300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="IndexOutOfBounds" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«exception»&lt;/span&gt;&lt;br&gt;&lt;b&gt;IndexOutOfBounds&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ IndexOutOfBounds()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="150" y="560" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MaxSize" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«exception»&lt;/span&gt;&lt;br&gt;&lt;b&gt;MaxSize&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ MaxSize()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="690" y="560" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EmptySet" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:11px;&quot;&gt;«exception»&lt;/span&gt;&lt;br&gt;&lt;b&gt;EmptySet&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ EmptySet()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="560" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Set" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;b&gt;Set&lt;/b&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;- data: int*&lt;br&gt;- size: int&lt;/div&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;text-align:left;&quot;&gt;+ Set()&lt;br&gt;+ Set(n: int)&lt;br&gt;+ ~Set()&lt;br&gt;+ find(e: int): int&lt;br&gt;+ add(e: int): void&lt;br&gt;+ del(e: int): void&lt;br&gt;+ show(): void&lt;br&gt;+ getSize(): int&lt;br&gt;+ operator[](i: int): int&lt;br&gt;+ operator()(): int&lt;br&gt;+ operator*(other: Set&amp;amp;): Set&lt;br&gt;+ operator--(): Set&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=center;verticalAlign=top;spacing=8;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="-270" y="90" width="370" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Note" value="&lt;b&gt;Обозначения UML&lt;/b&gt;&lt;br&gt;+ public&amp;nbsp;&amp;nbsp; # protected&amp;nbsp;&amp;nbsp; - private&lt;br&gt;△ — обобщение/наследование&lt;br&gt;пунктир — зависимость «throws»&lt;br&gt;&lt;br&gt;&lt;b&gt;Глобальная константа&lt;/b&gt;&lt;br&gt;«constant» MAX_SIZE: int = 30" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;align=left;verticalAlign=top;spacing=10;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="90" width="300" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e_IndexError_Error" value="" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;" parent="1" source="IndexError" target="Error" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_SizeError_Error" value="" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;" parent="1" source="SizeError" target="Error" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_IOB_IndexError" value="" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;exitX=0.706;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IndexOutOfBounds" target="IndexError" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_MaxSize_SizeError" value="" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.215;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MaxSize" target="SizeError" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EmptySet_SizeError" value="" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;entryX=0.855;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.175;exitY=-0.011;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="EmptySet" target="SizeError" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_Set_MaxSize" value="«throws»" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Set" target="MaxSize" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-80" y="720" />
+              <mxPoint x="535" y="720" />
+              <mxPoint x="820" y="720" />
+            </Array>
+            <mxPoint x="-80" y="730" as="sourcePoint" />
+            <mxPoint x="816.7647058823532" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_Set_IOB" value="«throws»" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;entryX=0.15;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.846;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Set" target="IndexOutOfBounds" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_Set_EmptySet" value="«throws»" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;exitX=0.195;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Set" target="EmptySet" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-200" y="760" />
+              <mxPoint x="650" y="760" />
+              <mxPoint x="1060" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_Set_Note" value="uses MAX_SIZE" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Set" target="Note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="60" />
+              <mxPoint x="800" y="60" />
+            </Array>
+            <mxPoint x="-100" y="209.62264150943383" as="sourcePoint" />
+            <mxPoint x="960" y="109.0322580645161" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,113 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="UML class_8(3)" id="class-8-3-uml">
+    <mxGraphModel dx="1895" dy="1375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tevent_title" value="«struct» TEvent" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="60" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tevent_attr" value="+ what: int + command: int + a: int" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="110" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tevent_methods" value="" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="210" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="object_title" value="«abstract» Object" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="60" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="object_attr" value="# name: string # age: int" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="120" width="360" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="object_methods" value="+ virtual ~Object() + Show(): void = 0 + Input(): void = 0 + HandleEvent(e: const TEvent&amp;): void = 0" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="205" width="360" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="person_title" value="Person" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="660" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="person_attr" value="" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="710" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="person_methods" value="+ Person() + Show(): void override + Input(): void override + HandleEvent(e: const TEvent&amp;): void override" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="750" width="360" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_title" value="Employee" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="975" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_attr" value="- salary: float - position: string" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="1025" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="employee_methods" value="+ Show(): void override + Input(): void override + HandleEvent(e: const TEvent&amp;): void override" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="1105" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vector_title" value="Vector" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="430" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vector_attr" value="# beg: Object** # size: int # cur: int" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="480" width="310" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="vector_methods" value="+ Vector() + ~Vector() + Create(n: int): void + Add(): void + Show(): void + Del(): void + Size(): int + HandleEvent(e: const TEvent&amp;): void" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="585" width="310" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="dialog_title" value="Dialog" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="870" y="430" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dialog_attr" value="- EndState: int" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="870" y="480" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dialog_methods" value="- ClearEvent(e: TEvent&amp;): void - EndExec(): void - Valid(): int + Dialog() + GetEvent(e: TEvent&amp;): void + HandleEvent(e: TEvent&amp;): void + Execute(): void" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="870" y="540" width="360" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="main_title" value="Global functions" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="870" y="835" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="main_attr" value="" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="870" y="885" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="main_methods" value="+ main(): int creates Dialog d calls d.Execute()" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=14;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="870" y="925" width="360" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="constants_note" value="Global constants: evNothing = 0 evMessage = 100 cmMake = 1 cmAdd = 2 cmDel = 3 cmShow = 4 cmGet = 5 cmQuit = 6" style="shape=note;whiteSpace=wrap;html=0;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffffff;strokeColor=#000000;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" parent="1" vertex="1">
+          <mxGeometry x="930" y="50" width="240" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="person_extends_object" value="extends" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;fontSize=14;" parent="1" source="person_title" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="employee_extends_person" value="extends" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;fontSize=14;" parent="1" source="employee_title" target="person_title" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dialog_extends_vector" value="extends" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;fontSize=14;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="620" as="sourcePoint" />
+            <mxPoint x="350" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vector_has_object" value="beg: Object**" style="startArrow=diamond;startFill=1;endArrow=open;html=1;rounded=0;strokeColor=#000000;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="vector_title" target="object_methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="object_uses_tevent" value="HandleEvent uses" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="object_attr" target="tevent_attr" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vector_uses_tevent" value="uses TEvent" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.298;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="vector_title" target="tevent_methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dialog_uses_tevent" value="creates / handles" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.001;exitY=0.155;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="dialog_methods" target="tevent_methods" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="611.5729420439461" as="sourcePoint" />
+            <mxPoint x="236.27999999999997" y="298.41999999999985" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dialog_uses_constants" value="commands" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="dialog_title" target="constants_note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="main_creates_dialog" value="creates" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="main_title" target="dialog_methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram id="5e5bc47c1f84" name="Page-1">
+    <mxGraphModel dx="1042" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="240" y="40" width="400" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="" style="line;strokeWidth=1;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="240" y="90" width="400" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="" style="line;strokeWidth=1;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="240" y="185" width="400" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;div style=&#39;font-size:16px&#39;&gt;Money&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="240" y="40" width="400" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="&lt;div align=&#39;left&#39; style=&#39;font-size:14px&#39;&gt;- rubles: long&lt;br&gt;- kopecks: int&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;spacingLeft=12;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="240" y="105" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="&lt;div align=&#39;left&#39; style=&#39;font-size:14px&#39;&gt;- normalize(): void&lt;br&gt;+ Money()&lt;br&gt;+ Money(r: long, k: int)&lt;br&gt;+ Money(other: const Money&amp;amp;)&lt;br&gt;+ ~Money()&lt;br&gt;+ getRubles() const: long&lt;br&gt;+ getKopecks() const: int&lt;br&gt;+ setRubles(r: long): void&lt;br&gt;+ setKopecks(k: int): void&lt;br&gt;+ operator+(other: const Money&amp;amp;): Money&lt;br&gt;+ operator/(other: const Money&amp;amp;) const: double&lt;br&gt;+ operator*(factor: double) const: Money&lt;br&gt;+ «friend» operator&amp;gt;&amp;gt;(in: istream&amp;amp;, a: Money&amp;amp;): istream&amp;amp;&lt;br&gt;+ «friend» operator&amp;lt;&amp;lt;(out: ostream&amp;amp;, a: const Money&amp;amp;): ostream&amp;amp;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;spacingLeft=12;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="240" y="205" width="400" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="240" y="590" width="400" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="line;strokeWidth=1;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="240" y="640" width="400" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Внешние функции" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="240" y="590" width="400" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="&lt;div align=&#39;left&#39; style=&#39;font-size:14px&#39;&gt;+ operator&amp;gt;&amp;gt;(in: istream&amp;amp;, a: Money&amp;amp;): istream&amp;amp;&lt;br&gt;+ operator&amp;lt;&amp;lt;(out: ostream&amp;amp;, a: const Money&amp;amp;): ostream&amp;amp;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;spacingLeft=12;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="240" y="655" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="«friend»" style="endArrow=block;endFill=0;dashed=1;html=1;rounded=0;strokeColor=#000000;" parent="1" source="8" target="2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="590" as="sourcePoint" />
+            <mxPoint x="440" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

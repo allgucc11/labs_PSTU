@@ -1,0 +1,52 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="UML Pair Rational" id="pair-rational-uml">
+    <mxGraphModel dx="1603" dy="1163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pair_title" value="Pair" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="60" width="430" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pair_attr" value="# first: int&#xa;# second: int" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="110" width="430" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pair_methods" value="+ Pair()&#xa;+ Pair(f: int, s: int)&#xa;+ Pair(other: const Pair&amp;)&#xa;+ ~Pair()&#xa;+ getFirst() const: int&#xa;+ getSecond() const: int&#xa;+ setFirst(f: int): void&#xa;+ setSecond(s: int): void&#xa;+ operator=(other: const Pair&amp;): Pair&amp;&#xa;+ operator-(other: const Pair&amp;) const: Pair&#xa;«friend» operator&gt;&gt;(in: istream&amp;, p: Pair&amp;): istream&amp;&#xa;«friend» operator&lt;&lt;(out: ostream&amp;, p: const Pair&amp;): ostream&amp;" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="200" width="430" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="rat_title" value="Rational" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="620" width="520" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rat_attr" value="" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="670" width="520" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rat_methods" value="- gcd(a: int, b: int) const: int&#xa;- reduce(): void&#xa;+ Rational()&#xa;+ Rational(num: int, den: int)&#xa;+ Rational(other: const Rational&amp;)&#xa;+ ~Rational()&#xa;+ getNumerator() const: int&#xa;+ getDenominator() const: int&#xa;+ setNumerator(num: int): void&#xa;+ setDenominator(den: int): void&#xa;+ operator=(other: const Rational&amp;): Rational&amp;&#xa;+ operator+(other: const Rational&amp;) const: Rational&#xa;+ operator-(other: const Rational&amp;) const: Rational&#xa;+ operator*(other: const Rational&amp;) const: Rational&#xa;«friend» operator&gt;&gt;(in: istream&amp;, r: Rational&amp;): istream&amp;&#xa;«friend» operator&lt;&lt;(out: ostream&amp;, r: const Rational&amp;): ostream&amp;" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="720" width="520" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="func_title" value="Global functions" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=center;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="680" y="60" width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="func_methods" value="+ f1(p: Pair&amp;): void&#xa;+ f2(): Pair" style="rounded=0;whiteSpace=wrap;html=0;strokeColor=#000000;fillColor=#ffffff;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;fontStyle=0;" parent="1" vertex="1">
+          <mxGeometry x="680" y="110" width="390" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit" value="" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;" parent="1" source="rat_title" target="pair_methods" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="570" as="sourcePoint" />
+            <mxPoint x="335" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="use_pair" value="«use»" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="func_title" target="pair_title" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="use_rat" value="«use»" style="endArrow=open;dashed=1;html=1;rounded=0;strokeColor=#000000;fontSize=14;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="func_methods" target="rat_title" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="280" as="sourcePoint" />
+            <mxPoint x="640" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
